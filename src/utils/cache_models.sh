@@ -1,0 +1,40 @@
+model_list=(
+#  "https://download.pytorch.org/models/alexnet-owt-4df8aa71.pth"
+#  "https://download.pytorch.org/models/densenet121-a639ec97.pth"
+#  "https://download.pytorch.org/models/densenet161-8d451a50.pth"
+#  "https://download.pytorch.org/models/densenet169-b2777c0a.pth"
+#  "https://download.pytorch.org/models/densenet201-c1103571.pth"
+#  "https://download.pytorch.org/models/googlenet-1378be20.pth"
+#  "https://download.pytorch.org/models/inception_v3_google-1a9a5a14.pth"
+#  "https://download.pytorch.org/models/mnasnet0.5_top1_67.823-3ffadce67e.pth"
+#  "https://download.pytorch.org/models/mnasnet1.0_top1_73.512-f206786ef8.pth"
+#  "https://download.pytorch.org/models/mobilenet_v2-b0353104.pth"
+#  "https://download.pytorch.org/models/mobilenet_v3_large-8738ca79.pth"
+#  "https://download.pytorch.org/models/mobilenet_v3_small-047dcff4.pth"
+#  "https://download.pytorch.org/models/resnet101-5d3b4d8f.pth"
+#  "https://download.pytorch.org/models/resnet152-b121ed2d.pth"
+  "https://download.pytorch.org/models/resnet18-5c106cde.pth"
+#  "https://download.pytorch.org/models/resnet34-333f7ec4.pth"
+#  "https://download.pytorch.org/models/resnet50-19c8e357.pth"
+#  "https://download.pytorch.org/models/resnext101_32x8d-8ba56ff5.pth"
+#  "https://download.pytorch.org/models/resnext50_32x4d-7cdf4587.pth"
+#  "https://download.pytorch.org/models/shufflenetv2_x0.5-f707e7126e.pth"
+#  "https://download.pytorch.org/models/shufflenetv2_x1-5666bf0f80.pth"
+#  "https://download.pytorch.org/models/squeezenet1_0-a815701f.pth"
+#  "https://download.pytorch.org/models/squeezenet1_1-f364aa15.pth"
+#  "https://download.pytorch.org/models/vgg11-bbd30ac9.pth"
+#  "https://download.pytorch.org/models/vgg11_bn-6002323d.pth"
+#  "https://download.pytorch.org/models/vgg13_bn-abd245e5.pth"
+#  "https://download.pytorch.org/models/vgg13-c768596a.pth"
+#  "https://download.pytorch.org/models/vgg16-397923af.pth"
+#  "https://download.pytorch.org/models/vgg16_bn-6c64b313.pth"
+#  "https://download.pytorch.org/models/vgg19_bn-c79401a0.pth"
+#  "https://download.pytorch.org/models/vgg19-dcbb9e9d.pth"
+#  "https://download.pytorch.org/models/wide_resnet101_2-32ee1156.pth"
+#  "https://download.pytorch.org/models/wide_resnet50_2-95faca4d.pth"
+)
+
+for model_url in "${model_list[@]}"; do
+  echo $model_url
+  wget -P ~/.cache/torch/hub/checkpoints -N $model_url
+done
