@@ -1,0 +1,9 @@
+matplotlib==3.3.3
+pandas==1.2.0
+pytorch-lightning==1.1.4
+pytorch-lightning-bolts==0.2.5
+seaborn==0.11.1
+tensorboard==2.4.1
+test_tube==0.7.5
+torch==1.7.1
+torchvision==0.8.2
